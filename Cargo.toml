@@ -1,0 +1,8 @@
+[package]
+name = "libkeylogger"
+version = "0.1.0"
+authors = ["Zhan Poplavskyi <gan.popl@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+winapi = { version = "0.3.9", features = ["minwindef", "winuser"] }
