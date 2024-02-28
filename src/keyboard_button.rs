@@ -1,5 +1,4 @@
-use std::fmt;
-use std::fmt::Display;
+use std::fmt::Debug;
 
 #[derive(Copy, Clone, Debug, PartialEq)]
 pub enum KeyboardButton {
@@ -393,11 +392,5 @@ impl KeyboardButton {
 impl PartialEq<u32> for KeyboardButton {
     fn eq(&self, other: &u32) -> bool {
         *self as u32 == *other
-    }
-}
-
-impl Display for KeyboardButton {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "{}", self)
     }
 }
